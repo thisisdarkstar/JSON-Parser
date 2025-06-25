@@ -1,15 +1,23 @@
 #!/usr/bin/env bash
 #
-# -----------------------------------------------------------------------------
-#  JSON Parser in Pure Bash
-#  Author: Darkstar
-#  License: MIT
-#  Repository: https://github.com/yourusername/your-repo
-#  Description: Minimal JSON parser written in pure Bash. No external dependencies.
-#               Supports extracting values from JSON files using simple query paths.
-#  Version: 1.0.0
-#  Date: 2025-06-25
-# -----------------------------------------------------------------------------
+# JSON Parser in Pure Bash
+# ------------------------
+# Extract values from JSON files using simple query paths, with no external dependencies.
+#
+# Author:      Darkstar thisisdarkstar@duck.com
+# Repository:  https://github.com/thisisdarkstar/JSON-Parser.git
+# License:     MIT
+# Version:     1.0.0
+# Date:        2025-06-25
+#
+# Usage:       ./json_parser.sh <json-file> '<query>'
+#
+# Description:
+#   - Parses JSON objects and arrays
+#   - Supports dot/bracket notation (e.g., data.users[0].name)
+#   - Supports wildcards for arrays (e.g., data.users[*])
+#   - Returns null for non-existent paths
+#   - No dependencies except
 
 # Minify JSON by removing unnecessary whitespace (while keeping strings intact)
 minify_json() {

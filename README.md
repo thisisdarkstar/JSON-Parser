@@ -1,23 +1,27 @@
-# JSON Parser in Pure Bash
+# 🐚 JSON Parser in Pure Bash
 
-A minimal JSON parser written in pure Bash, with no external dependencies.  
+A minimal JSON parser written in **pure Bash**, with no external dependencies.  
 Supports extracting values from JSON files using simple query paths.
 
-## Features
+---
 
-- Parses JSON objects and arrays
-- Extracts values using dot/bracket notation (e.g., `data.users[0].name`)
-- Supports wildcards for arrays (e.g., `data.users[*]`)
-- Returns `null` for non-existent paths
-- No dependencies except Bash (and [bats](https://github.com/bats-core/bats-core) for testing)
+## ✨ Features
 
-## Usage
+- 🗂️ Parses JSON objects and arrays
+- 🔎 Extracts values using dot/bracket notation (e.g., `data.users[0].name`)
+- 🌟 Supports wildcards for arrays (e.g., `data.users[*]`)
+- 🚫 Returns `null` for non-existent paths
+- ⚡ No dependencies except Bash (and [bats](https://github.com/bats-core/bats-core) for testing)
+
+---
+
+## 🚀 Usage
 
 ```sh
 ./json_parser.sh <json-file> '<query>'
 ```
 
-**Examples:**
+### 📋 Examples
 
 Given a file `test.json`:
 ```json
@@ -56,24 +60,49 @@ Non-existent path:
 # Output: null
 ```
 
-## Running Tests
+---
+
+## 🧪 Running Tests
 
 This project uses [bats](https://github.com/bats-core/bats-core) for unit testing.
 
-To run tests:
+### 1️⃣ Install Bats
+
+If you don’t have Bats installed, you can install it via Homebrew (macOS), Chocolatey (Windows), or from source:
+
+- **macOS:**  
+  ```sh
+  brew install bats-core
+  ```
+- **Windows (with Chocolatey):**  
+  ```sh
+  choco install bats
+  ```
+- **From source:**  
+  See [bats-core installation guide](https://github.com/bats-core/bats-core#installation).
+
+### 2️⃣ Run the Tests
+
 ```sh
 bats unit_test.sh
 ```
 
-## Limitations
+You should see output indicating which tests passed or failed.
+
+---
+
+## ⚠️ Limitations
 
 - Only supports a subset of JSON (no support for all edge cases)
 - Does not handle escaped quotes inside strings
 - Not suitable for very large or deeply nested JSON
 
-## License
+---
+
+## 📄 License
 
 MIT License
 
 ---
-Inspired by the challenge of parsing JSON with only
+
+> 🧑‍💻 Inspired by the challenge of parsing JSON with

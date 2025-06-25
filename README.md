@@ -62,6 +62,8 @@ Non-existent path:
 
 ---
 
+---
+
 ## 🧪 Running Tests
 
 This project uses [bats](https://github.com/bats-core/bats-core) for unit testing.
@@ -83,26 +85,23 @@ If you don’t have Bats installed, you can install it via Homebrew (macOS), Cho
 
 ### 2️⃣ Run the Tests
 
+From your project directory, run:
+
 ```sh
 bats unit_test.sh
 ```
 
-You should see output indicating which tests passed or failed.
+#### 🟢 Example Output
 
----
+```
+ ✓ Extract simple value: data.users[0].name
+ ✓ Extract simple value: data.users[2].role
+ ✓ Extract full array: data.users[*]
+ ✓ Extract full array without *: data.users
+ ✓ Non-existent path returns null
+ ✓ Invalid query shows null
 
-## ⚠️ Limitations
+6 tests, 0 failures
+```
 
-- Only supports a subset of JSON (no support for all edge cases)
-- Does not handle escaped quotes inside strings
-- Not suitable for very large or deeply nested JSON
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-> 🧑‍💻 Inspired by the challenge of parsing JSON with
+You should see green checkmarks for each passing test and a summary at

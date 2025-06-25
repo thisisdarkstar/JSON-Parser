@@ -62,8 +62,6 @@ Non-existent path:
 
 ---
 
----
-
 ## 🧪 Running Tests
 
 This project uses [bats](https://github.com/bats-core/bats-core) for unit testing.
@@ -105,3 +103,20 @@ bats unit_test.sh
 ```
 
 You should see green checkmarks for each passing test and a summary at
+---
+
+## ⚠️ Limitations
+
+- Only supports a subset of JSON (no support for all edge cases)
+- Does not handle escaped quotes inside strings
+- Not suitable for very large or deeply nested JSON
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+> 🧑‍💻 Inspired by the challenge of parsing JSON with

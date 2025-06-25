@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
+#
+# -----------------------------------------------------------------------------
+#  JSON Parser in Pure Bash
+#  Author: Darkstar
+#  License: MIT
+#  Repository: https://github.com/yourusername/your-repo
+#  Description: Minimal JSON parser written in pure Bash. No external dependencies.
+#               Supports extracting values from JSON files using simple query paths.
+#  Version: 1.0.0
+#  Date: 2025-06-25
+# -----------------------------------------------------------------------------
 
 # Minify JSON by removing unnecessary whitespace (while keeping strings intact)
 minify_json() {

@@ -1,6 +1,6 @@
-# 🐚 JSON Parser in Pure Bash
+# 🐚 JSON Value Extractor in Pure Bash
 
-A minimal JSON parser written in **pure Bash**, with no external dependencies.  
+A minimal Value Extractor written in **pure Bash**, with no external dependencies.  
 Supports extracting values from JSON files using simple query paths.
 
 ---

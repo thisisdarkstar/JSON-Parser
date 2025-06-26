@@ -18,7 +18,7 @@ Supports extracting values from JSON files using simple query paths.
 ## 🚀 Usage
 
 ```sh
-./json_parser.sh <json-file> '<query>'
+./json_extractor.sh <json-file> '<query>'
 ```
 
 ### 📋 Examples
@@ -38,25 +38,25 @@ Given a file `test.json`:
 
 Extract a single value:
 ```sh
-./json_parser.sh test.json 'data.users[0].name'
+./json_extractor.sh test.json 'data.users[0].name'
 # Output: "Yug"
 ```
 
 Extract a value from another user:
 ```sh
-./json_parser.sh test.json 'data.users[2].role'
+./json_extractor.sh test.json 'data.users[2].role'
 # Output: "User"
 ```
 
 Extract all users:
 ```sh
-./json_parser.sh test.json 'data.users[*]'
+./json_extractor.sh test.json 'data.users[*]'
 # Output: [{"name":"Yug","role":"Admin"},{"name":"Nova","role":"User"},{"name":"Bob","role":"User"}]
 ```
 
 Non-existent path:
 ```sh
-./json_parser.sh test.json 'data.users[5].name'
+./json_extractor.sh test.json 'data.users[5].name'
 # Output: null
 ```
 

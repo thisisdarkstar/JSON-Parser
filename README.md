@@ -101,8 +101,6 @@ bats unit_test.sh
 
 6 tests, 0 failures
 ```
-
-You should see green checkmarks for each passing test and a summary at
 ---
 
 ## ⚠️ Limitations
@@ -119,4 +117,4 @@ MIT License
 
 ---
 
-> 🧑‍💻 Inspired by the challenge of parsing JSON with
+> 🧑‍💻 Inspired by the challenge of parsing JSON with Bash
